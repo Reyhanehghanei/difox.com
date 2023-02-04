@@ -1,0 +1,51 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.contener {
+    width: 90%;
+    margin: 0 auto;
+ }
+ .top-nov{
+    margin-top: 60px;
+ }
+ ul.main-menu{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+ }
+ ul.main-menu::after{
+    display: block;
+    content: "";
+    clear: both;
+ }
+ ul.main-menu li{
+    float: right;
+ }
+ ul.main-menu li a:link,ul.main-menu li a:visited{
+    display: block;
+    width: 86px;
+    height: 40px;
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: none;
+    color: black;
+    }
+    .con2{
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     border:px solid firebrick;
+     width:100% ;
+    }
+   
+    ul a i {
+        color: black;
+    }
+    .main-menu li a   {
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+   }
+    
+  
