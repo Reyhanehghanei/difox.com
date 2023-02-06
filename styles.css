@@ -12,13 +12,11 @@
     url("fonts/iranyekan_numbers/woff/iranyekanwebregular(fanum).woff") format('woff'),
     url("fonts/iranyekan_numbers/svg/iranyekanwebregular(fanum).svg") format('svg');
 }
-
 .container{
     /*border: 1px solid red;*/
     width: 80%;
     min-height: 300px;
-    margin: 0 auto;
-    
+    margin: 0 auto;   
 }
 .bxslider{
     width: 80%;
@@ -26,19 +24,12 @@
 div.aks{
     margin-top: 15px;
 }
-
 #wrapper{
     /*border: 1px solid green;*/
     margin: 0 auto;
     display: flex;
     flex-direction: row;
 }
-#wrapper::after{
-    display: block;
-    clear: both;
-    content: "";
-}
-
 .item{
     width: 40%;
     height: 300px;
@@ -77,6 +68,158 @@ div.aks{
 .overlay>p{
     margin-top: 110px;
 }
+.line-color{
+    margin-top: 40px;
+    border: 0;
+    border-top: 0 solid transparent;
+    background: linear-gradient(-90deg,#3ce2c1,#236fef,#e13b5f);
+    height: 45px;
+    box-shadow: inset 0 -40px 40px 11px #fff;
+}
+ .color2 {
+    background-color: #f9f9f9;;
+}
+div .flex2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: px;
+    
+    height: auto;
+}
+div .flex2 .rast {
+    
+    width: 30%;
+    border: 1px solid red;
+ }
+ div .flex2  .left {
+    width: 70%;
+   
+ }
+ 
+ div .flex2 .left .border {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border_img.png)22 stretch;
+    position: relative;
+    margin: 20px auto 20px auto;
+ }
+ div .flex2 .left .border p {
+    text-align: right;
+ }
+ div .flex2 .left .border span {
+   font-weight: 400;
+   font-size: .88em;
+   margin: auto 8px;
+   padding: 0 5px;
+   border-radius: 28px;
+   background-color: #fff5a7;
+   color: #887f37;
+   display: inline;
+   cursor: pointer;
+}
+div .flex2 .left .border  a {
+      text-decoration: none;
+}
+div .flex2 .left .border .top2 {
+    position: absolute;
+    left: 0;
+    top: 0;    
+    color:#ff0043;
+}
+div .flex2 .left .border .top2 span {
+    margin: 5;
+    padding: 0;
+    background-color: transparent;
+    font-weight: bolder;
+    font-size: 18px;
+    color:#ff0043;
+}
+div .flex2 .left .pc {
+    background-color: white;
+    border-radius: 10px;
+    width:100%;
+    
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+}
+div .flex2 .left .pc .rast2 {
+    width: 70%;
+    border: 1px solid darkblue;  
+}
+div .flex2 .left .pc .rast2 h4 {
+    text-align: right;
+}
+div .flex2 .left .pc .rast2 span{
+background-color: #ff0043;
+    color: #fff;
+    padding: 2px 6px;
+    font-size: .75em;
+    border-radius: 20px;
+    margin: 5px;
+    font-weight: 400;
+}
+div .flex2 .left .pc .rast2 a {
+    text-decoration:none;
+    color: black;
+    margin-right: 10px;
+}
+div .flex2 .left .pc .rast2 .flex3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+
+}
+div .flex2 .left .pc .rast2 .flex3 .col-1 {
+    width:40%;
+}
+div .flex2 .left .pc .rast2 .flex3 .col-2 {
+    width:40%;
+    
+}
+div .flex2 .left .pc .rast2 .flex3 .col-2  table:before{
+
+    box-shadow: 1px 0 1px #fbfbfb;
+    content: " ";
+    position: absolute;
+    right: -5px;
+    top: 0;
+    height: calc(100% - 5px);
+}
+div .flex2 .left .pc .rast2 .flex3 .col-3 {
+    width:20%;
+    border: 1px solid sandybrown;
+}
+
+div .flex2 .left .pc .left2 {
+    width: 30%;
+    border: 1px solid darkblue; 
+
+}
+
+/*media*/
+@media only screen and (max-width:980px)   {
+    .container {
+        width: 95%;
+    }
+    .item{
+        height: 200px;
+    }
+}
+@media only screen and (max-width:767px)   {
+    #wrapper{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;    
+    }
+    .item{
+        width:85%;
+        height: auto;
+    }
+}
+
 
 
  
