@@ -82,21 +82,15 @@ div.aks{
 div .flex2 {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    gap: px;
-    
+    width: 100%;  
     height: auto;
 }
 div .flex2 .rast {
-    
     width: 30%;
-    border: 1px solid red;
  }
  div .flex2  .left {
     width: 70%;
-   
  }
- 
  div .flex2 .left .border {
     border: 10px solid transparent;
     padding: 15px;
@@ -146,7 +140,6 @@ div .flex2 .left .pc {
 }
 div .flex2 .left .pc .rast2 {
     width: 70%;
-    border: 1px solid darkblue;  
 }
 div .flex2 .left .pc .rast2 h4 {
     text-align: right;
@@ -170,35 +163,45 @@ div .flex2 .left .pc .rast2 .flex3 {
     flex-direction: row;
     width: 100%;
     height: 100px;
-
 }
 div .flex2 .left .pc .rast2 .flex3 .col-1 {
     width:40%;
+    border-right: 1px solid #f1f1f1;
 }
 div .flex2 .left .pc .rast2 .flex3 .col-2 {
-    width:40%;
-    
+    width:40%; 
+    border-right: 1px solid #f1f1f1;
 }
-div .flex2 .left .pc .rast2 .flex3 .col-2  table:before{
-
-    box-shadow: 1px 0 1px #fbfbfb;
-    content: " ";
-    position: absolute;
-    right: -5px;
-    top: 0;
-    height: calc(100% - 5px);
+div .flex2 .left .pc .rast2 .flex3  .flex4{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    justify-content: center;
+    list-style-type: none;
 }
-div .flex2 .left .pc .rast2 .flex3 .col-3 {
-    width:20%;
-    border: 1px solid sandybrown;
+div .flex2 .left .pc .rast2 .flex3 .flex4 ul{
+    list-style-type: none;
+    direction: rtl;
 }
-
+div .flex2 .left .pc .rast2 .flex3 .flex4 .bold{
+    margin-right: -15px;
+    font-weight: bold;
+}
+div .flex2 .left .pc .rast2 .flex3 .col3 {
+    width: 20%;
+    margin-top: 25px;
+    text-align: center;
+    margin-top: 32px;
+    font-size: 25px;
+}
 div .flex2 .left .pc .left2 {
     width: 30%;
-    border: 1px solid darkblue; 
+}
+div .flex2 .left .pc .rast2 .flex3 .col-1 {
+     
+
 
 }
-
 /*media*/
 @media only screen and (max-width:980px)   {
     .container {
