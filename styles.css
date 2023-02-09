@@ -145,7 +145,7 @@ div .flex2 .left .pc {
     margin: 10px auto 20px;
     line-height: 27px;
     text-align: justify;
-    font-weight: 700;
+    font-weight: 500;
     text-align: right;
     padding: 5px;
     margin: 5px;
@@ -271,6 +271,9 @@ border-radius: 5px;
         margin-right: 0;
     } 
 @media only screen and (max-width:665px) {
+    #wrapper{
+        flex-direction: column;
+    }
     div .flex2 .left .pc {
         flex-direction: column-reverse;
         align-items: center;
