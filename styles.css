@@ -14,7 +14,7 @@
 }
 .container{
     /*border: 1px solid red;*/
-    width: 80%;
+    width: 90%;
     min-height: 300px;
     margin: 0 auto;   
 }
@@ -84,9 +84,10 @@ div .flex2 {
     flex-direction: row;
     width: 100%;  
     height: auto;
+    gap: 40px;
 }
 div .flex2 .rast {
-    width: 30%;
+    width: 25%;
  }
  div .flex2  .left {
     width: 70%;
@@ -130,19 +131,30 @@ div .flex2 .left .border .top2 span {
     color:#ff0043;
 }
 div .flex2 .left .pc {
-    background-color: white;
-    border-radius: 10px;
+   
     width:100%;
-    
    display: flex;
    flex-direction: row;
-   gap: 10px;
+   gap: 30px;
+}
+.con2{
+    background-color: white;
+    border-radius: 10px 0px;
+}
+.con2 p{
+    margin: 10px auto 20px;
+    line-height: 27px;
+    text-align: justify;
+    font-weight: 700;
+    text-align: right;
+    padding: 5px;
+    margin: 5px;
 }
 div .flex2 .left .pc .rast2 {
     width: 70%;
 }
 div .flex2 .left .pc .rast2 h4 {
-    text-align: right;
+    text-align: center;
 }
 div .flex2 .left .pc .rast2 span{
 background-color: #ff0043;
@@ -162,7 +174,7 @@ div .flex2 .left .pc .rast2 .flex3 {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100px;
+    height: auto;
 }
 div .flex2 .left .pc .rast2 .flex3 .col-1 {
     width:40%;
@@ -197,10 +209,27 @@ div .flex2 .left .pc .rast2 .flex3 .col3 {
 div .flex2 .left .pc .left2 {
     width: 30%;
 }
-div .flex2 .left .pc .rast2 .flex3 .col-1 {
-     
-
-
+div .ul-btn{
+    direction: rtl;
+}
+div .ul-btn ul{
+    gap: 15px;
+    display: flex;
+    padding: 10px;
+}
+div .ul-btn a {
+    text-decoration: none;
+    color: #829061;
+}
+div .ul-btn li {
+    list-style-type: none;
+}
+div .ul-btn  button{
+padding: 10px;
+border: 0;
+background-color: #f5ffdc;
+cursor: pointer;
+border-radius: 5px;
 }
 /*media*/
 @media only screen and (max-width:980px)   {
@@ -210,6 +239,9 @@ div .flex2 .left .pc .rast2 .flex3 .col-1 {
     .item{
         height: 200px;
     }
+    div .flex2 .left .pc .rast2 h4 {
+        font-size: 15px;
+    }
 }
 @media only screen and (max-width:767px)   {
     #wrapper{
@@ -217,10 +249,52 @@ div .flex2 .left .pc .rast2 .flex3 .col-1 {
         align-items: center;
         gap: 10px;    
     }
+    .overlay {
+        width: 85%;
+    }
     .item{
         width:85%;
         height: auto;
     }
+    .left2 img {
+        margin-top: 65px;
+    }
+    div .flex2 .left .pc .rast2 .flex3  .flex4{
+        flex-direction: column;
+    }
+    div .flex2 .left .pc .rast2 a {
+        font-size: 12px;
+        margin-right: 0;
+    }
+    div .flex2 .left .pc .rast2 .flex3 .flex4 .bold {
+        margin-top: -5px;
+        margin-right: 0;
+    } 
+@media only screen and (max-width:665px) {
+    div .flex2 .left .pc {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    div .flex2 .left .pc .rast2 {
+        width: 100%;
+    }
+    div .flex2 .left .pc .left2 {
+        width: 60%;
+    }
+    div .flex2{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    div .flex2 .rast {
+        width: 75%;
+    }
+    div .flex2 .left .border {
+        width: 100%;
+    }
+    .con2 h4 {
+        font-size:12px ;
+    }
+}
 }
 
 
