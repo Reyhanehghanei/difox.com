@@ -12,6 +12,15 @@
     url("fonts/iranyekan_numbers/woff/iranyekanwebregular(fanum).woff") format('woff'),
     url("fonts/iranyekan_numbers/svg/iranyekanwebregular(fanum).svg") format('svg');
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    direction: rtl;
+    font-family: 'iranyekan_numbers','iranyekan';
+}
 .container{
     /*border: 1px solid red;*/
     width: 90%;
@@ -76,9 +85,7 @@ div.aks{
     height: 45px;
     box-shadow: inset 0 -40px 40px 11px #fff;
 }
- .color2 {
-    background-color: #f9f9f9;;
-}
+
 div .flex2 {
     display: flex;
     flex-direction: row;
@@ -88,9 +95,11 @@ div .flex2 {
 }
 div .flex2 .rast {
     width: 25%;
+    /*border: 1px solid darkblue;*/
  }
  div .flex2  .left {
     width: 70%;
+    /*border: 1px solid firebrick;*/
  }
  div .flex2 .left .border {
     border: 10px solid transparent;
@@ -101,6 +110,7 @@ div .flex2 .rast {
  }
  div .flex2 .left .border p {
     text-align: right;
+    color: #565656;
  }
  div .flex2 .left .border span {
    font-weight: 400;
@@ -131,11 +141,11 @@ div .flex2 .left .border .top2 span {
     color:#ff0043;
 }
 div .flex2 .left .pc {
-   
     width:100%;
    display: flex;
-   flex-direction: row;
+   flex-direction: row-reverse;
    gap: 30px;
+   margin-top: 15px;
 }
 .con2{
     background-color: white;
@@ -149,9 +159,11 @@ div .flex2 .left .pc {
     text-align: right;
     padding: 5px;
     margin: 5px;
+    font-size: 15px;
 }
 div .flex2 .left .pc .rast2 {
     width: 70%;
+    margin-top: 40px;
 }
 div .flex2 .left .pc .rast2 h4 {
     text-align: center;
@@ -172,9 +184,10 @@ div .flex2 .left .pc .rast2 a {
 }
 div .flex2 .left .pc .rast2 .flex3 {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     width: 100%;
     height: auto;
+    margin-top: 15px;
 }
 div .flex2 .left .pc .rast2 .flex3 .col-1 {
     width:40%;
@@ -190,10 +203,12 @@ div .flex2 .left .pc .rast2 .flex3  .flex4{
     font-size: 12px;
     justify-content: center;
     list-style-type: none;
+    margin-top: 20px;
+    gap: 25px;
 }
 div .flex2 .left .pc .rast2 .flex3 .flex4 ul{
     list-style-type: none;
-    direction: rtl;
+    padding: 10px;
 }
 div .flex2 .left .pc .rast2 .flex3 .flex4 .bold{
     margin-right: -15px;
@@ -231,8 +246,51 @@ background-color: #f5ffdc;
 cursor: pointer;
 border-radius: 5px;
 }
+.con2 .img3{
+    margin: 0 auto;
+    width: 95%;
+}
+.con2 .img3 img {
+    width: 100%;
+    margin-top: 25px;
+}
+
+/*btn-p*/
+ div .btn-p {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    bottom: 70px;
+    
+    
+ }
+ div .btn-p a button {
+    background-color: #2374ef;
+    color: #fff;
+    font-size: 1.3em;
+    padding: 8px 22px;
+    border-radius: 4px;
+    border: 0;
+    outline: 0;
+ }
+ /*btn-p*/
+/*foter*/
+footer{
+    background-image: url(footer_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0 20px;
+    margin: auto;
+    position: relative;
+    font-size: .87em;
+    margin-top: 30px;
+    box-shadow: 0px -6px 14px #f5f5f5;
+
+}
+/*foter*/
+
 /*media*/
-@media only screen and (max-width:980px)   {
+@media only screen and (max-width:980px) {
     .container {
         width: 95%;
     }
@@ -250,10 +308,10 @@ border-radius: 5px;
         gap: 10px;    
     }
     .overlay {
-        width: 85%;
+        width: 100%;
     }
     .item{
-        width:85%;
+        width:55%;
         height: auto;
     }
     .left2 img {
@@ -261,15 +319,17 @@ border-radius: 5px;
     }
     div .flex2 .left .pc .rast2 .flex3  .flex4{
         flex-direction: column;
+        gap: 0;
     }
     div .flex2 .left .pc .rast2 a {
         font-size: 12px;
         margin-right: 0;
     }
     div .flex2 .left .pc .rast2 .flex3 .flex4 .bold {
-        margin-top: -5px;
         margin-right: 0;
-    } 
+        margin-top: -13px;
+    }
+} 
 @media only screen and (max-width:665px) {
     #wrapper{
         flex-direction: column;
@@ -285,7 +345,7 @@ border-radius: 5px;
         width: 60%;
     }
     div .flex2{
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
     }
     div .flex2 .rast {
@@ -297,7 +357,6 @@ border-radius: 5px;
     .con2 h4 {
         font-size:12px ;
     }
-}
 }
 
 
