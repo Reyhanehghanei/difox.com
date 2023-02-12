@@ -15,7 +15,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 body{
     direction: rtl;
@@ -240,11 +240,11 @@ div .ul-btn li {
     list-style-type: none;
 }
 div .ul-btn  button{
-padding: 10px;
-border: 0;
-background-color: #f5ffdc;
-cursor: pointer;
-border-radius: 5px;
+    padding: 10px;
+    border: 0;
+    background-color: #f5ffdc;
+    cursor: pointer;
+    border-radius: 5px;
 }
 .con2 .img3{
     margin: 0 auto;
@@ -262,7 +262,6 @@ border-radius: 5px;
     text-align: center;
     bottom: 70px;
     
-    
  }
  div .btn-p a button {
     background-color: #2374ef;
@@ -273,7 +272,7 @@ border-radius: 5px;
     border: 0;
     outline: 0;
  }
- /*btn-p*/
+/*btn-p*/
 /*foter*/
 footer{
     background-image: url(footer_bg.png);
@@ -285,6 +284,55 @@ footer{
     font-size: .87em;
     margin-top: 30px;
     box-shadow: 0px -6px 14px #f5f5f5;
+    opacity: 2;
+}
+
+div .grid{
+    display: grid;
+    grid-gap: 2.75rem;
+    grid-template-columns: repeat(4, minmax(0 , 1fr));
+    margin-bottom: 50px;
+    justify-content: center;
+    margin-top: 25px;
+}
+div .grid ul li {
+    list-style-type: none;
+}
+div .grid ul li a {
+    text-decoration: none;
+    color:#5d5b5b;
+    font-size: 11px;
+}
+div .grid ul li a:hover {
+    color: #000;
+}
+div .grid .flex5{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+div .grid .flex5 i{
+    font-size: 25px;
+}
+.color3{
+    color: #236fef;
+}
+.color5 {
+    color: #ff0043;
+}
+.color6{
+    color: #2fc4d2;
+}
+footer::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
 
 }
 /*foter*/
@@ -307,6 +355,10 @@ footer{
         align-items: center;
         gap: 10px;    
     }
+    div .grid {
+        grid-template-columns: repeat(2, minmax(0 , 1fr));
+          }
+
     .overlay {
         width: 100%;
     }
@@ -329,7 +381,7 @@ footer{
         margin-right: 0;
         margin-top: -13px;
     }
-} 
+    } 
 @media only screen and (max-width:665px) {
     #wrapper{
         flex-direction: column;
@@ -357,7 +409,13 @@ footer{
     .con2 h4 {
         font-size:12px ;
     }
-}
+    div .grid {
+        grid-template-columns: repeat(1, minmax(0 , 1fr));
+        width: 50%;
+        margin: 0 auto;
+          }
+   }
+
 
 
 
