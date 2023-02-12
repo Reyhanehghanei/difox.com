@@ -337,6 +337,21 @@ footer::before{
 footer .container {
     position: relative;
 }
+.flex6 {
+    direction: ltr;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+}
+.flex6 p{
+color: #8e8e8e;
+font-size: 11px;
+}
+.flex6 i {
+    color: #ff0043;
+    font-size: 15px;
+}
+
 /*foter*/
 
 /*media*/
