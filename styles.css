@@ -93,10 +93,7 @@ div .flex2 {
     height: auto;
     gap: 40px;
 }
-div .flex2 .rast {
-    width: 25%;
-    /*border: 1px solid darkblue;*/
- }
+
  div .flex2  .left {
     width: 70%;
     /*border: 1px solid firebrick;*/
@@ -349,10 +346,87 @@ font-size: 11px;
 }
 .flex6 i {
     color: #ff0043;
-    font-size: 15px;
+    font-size: 20px;
 }
-
 /*foter*/
+
+/*sidbar*/
+div .flex2 .rast {
+    width: 25%;
+    /*border: 1px solid darkblue;*/
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+  .flex7 {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .flex7 p {
+    font-size: 11px;
+    color: #b2b2b2;
+  }
+  .img{
+   margin: 0 auto;
+  }
+  .img img {
+    width: 90%;
+    margin: 0 auto;
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  .flex8 {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    gap: 30px;
+    margin-top: 10px;
+  }
+  .flex9 {
+    width: 45% !important;
+    background: linear-gradient(-90deg,#3ce2c1,#236fef,#7251b5);
+    border-radius: 30px;
+    padding: 5px;
+    color: white;
+    display: flex;
+    gap: 15px;
+  }
+  .flex10 {
+    width: 43%;
+    display: flex;
+    margin: 0 auto;
+    font-size: 27px;
+    gap: 26px;
+    color: #b2b2b2;
+    
+}
+  .con3 {
+    margin: 0 auto;
+    border: 1px solid darkblue;
+    margin-top: 20px;
+  }
+  .flex11 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 15px;
+    padding: 5px;
+  }
+  .flex11:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .con3 a {
+    text-decoration: none;
+    color: black;
+  }
+  .color7 {
+    color: #6c6c6c;
+    
+  }
+
+/*sidbar*/
 
 /*media*/
 @media only screen and (max-width:980px) {
