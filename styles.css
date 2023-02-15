@@ -539,6 +539,54 @@ div .flex2 .rast {
    .matn-box h5 {
        margin-bottom: 15px;
    }
+   .matn-box span {
+    float: left;
+    background-color: #ff0043;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 2px 1px;
+    font-size: 18px;
+    margin: 0 22px 0 8px;
+    position: relative;
+    z-index: 5;
+    transform: rotate(7deg);
+    left: 30px;
+    bottom: 24px;
+    font-size: 10px;
+}
+.color-img2:before {
+    position: absolute;
+    width: 100%;
+    height: 82%;
+    background-color: rgb(46 39 39 / 90%);
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.color-img2:hover::before{
+    background-color:red;
+}
+.color-img2 .h8 {
+    display: none;
+}
+.color-img2:hover .h8{
+    display: block;
+}
+.matn-box:hover h5{
+    display: none;
+}
+.color-img2 h5 {
+    position: absolute;
+    top: 60px;
+    left: 94px;
+    z-index: 1;
+    color: #f2ebdd;
+}
+.matn-box:hover .matn-box {
+    display: none;
+}
   
 
 
