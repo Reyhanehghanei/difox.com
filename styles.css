@@ -507,34 +507,34 @@ div .flex2 .rast {
     height: 140px;
   }
   .color-img:before {
-        position: absolute;
-        width: 100%;
-        height: 70%;
-        background-color: rgb(46 39 39 / 90%);
-        content: "";
-        top: 0;
-        right: 0;
-        left: 0;
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    background-color: rgb(46 39 39 / 90%);
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
     }
     .color-img:hover::before{
-        position: absolute;
-        width: 100%;
-        height: 70%;
-        background-color: rgba(75, 99, 150, 0.9);
-        content: "";
-        top: 0;
-        right: 0;
-        left: 0;
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    background-color: rgba(75, 99, 150, 0.9);
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
     }
     .matn-box {
-        position: relative;
-        bottom: 121px;
-        right: 10px;
-        font-size: 12px;
-        color: white;
+    position: relative;
+    bottom: 121px;
+    right: 10px;
+    font-size: 12px;
+    color: white;
     }
     .color-img a {
-        text-decoration: none;
+    text-decoration: none;
     }
    .matn-box h5 {
        margin-bottom: 15px;
@@ -552,7 +552,6 @@ div .flex2 .rast {
     z-index: 5;
     transform: rotate(7deg);
     left: 30px;
-    bottom: 24px;
     font-size: 10px;
 }
 .color-img2:before {
@@ -571,23 +570,21 @@ div .flex2 .rast {
 .color-img2 .h8 {
     display: none;
 }
-.color-img2:hover .h8{
-    display: block;
-}
-.matn-box:hover h5{
-    display: none;
-}
-.color-img2 h5 {
+.color-img2 h6 {
     position: absolute;
     top: 60px;
     left: 94px;
     z-index: 1;
     color: #f2ebdd;
+    font-size: 25px;
 }
-.matn-box:hover .matn-box {
-    display: none;
+.box-img:hover p, .box-img:hover span, .box-img:hover h5 {
+    visibility: hidden;
+    display: none; 
 }
-  
+.color-img2:hover .h8{
+    display: block;
+}
 
 
 
