@@ -631,6 +631,63 @@ div .flex2 .rast {
       font-size: 55px;
       color: grey;
     }
+    .flex-ul {
+     display: flex;
+     flex-direction: row;
+     gap: 60px;
+     justify-content: center;
+     font-size: 12px;
+     margin-top: 15px;
+    }
+    .flex-ul li {
+    list-style-type: none;
+    margin-bottom: 8px;
+    }
+    .flex-ul li a {
+        text-decoration: none;
+        color: #000;
+    }
+    .flex-ul li .color-li {
+        color: #236fef;
+    }
+    .border {
+        width: 92%;
+        border: 1px solid #e6e6e6;
+        min-height: 50px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 5px;
+    }
+    .rast3 {
+        width: 10%;
+    }
+    .rast3 img {
+        width: 100%;
+        margin-top: 6px;
+    }
+    .flex15 {
+        display: flex;
+        flex-direction: row;
+        gap: 5PX;
+        margin-top: 7px;
+        padding-right: 15px;
+    }
+    .flex15 p {
+        font-size: 10px;
+        color: #a6a6a6;
+    }
+    .flex15 h6 {
+        color: #1e66d4;
+    }
+    .border .left4 {
+        margin-top: 14px;
+        padding-left: 10px;
+        color: #a6a6a6;
+        font-size: 14px;
+    }
+
     
 
 /*sidbar*/
@@ -746,13 +803,10 @@ div .flex2 .rast {
     }
     .overlay3 h3 {
         right: 30px;
-
         }
     .item1 span {
         left: 1px;
-       }   
-        
-
+       }  
 }
 @media only screen and (max-width:767px) {
     #wrapper{
@@ -811,7 +865,7 @@ div .flex2 .rast {
     }
     .flex9 p {
         margin-top: 13px;
-        font-size: 12px;
+        font-size: 20px;
     }
     #wrapper{
         flex-direction: column;
