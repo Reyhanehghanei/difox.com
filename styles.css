@@ -12,7 +12,7 @@
     url("fonts/iranyekan_numbers/woff/iranyekanwebregular(fanum).woff") format('woff'),
     url("fonts/iranyekan_numbers/svg/iranyekanwebregular(fanum).svg") format('svg');
 }
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,6 +20,7 @@
 body{
     direction: rtl;
     font-family: 'iranyekan_numbers','iranyekan';
+    
 }
 .container{
     /*border: 1px solid red;*/
@@ -354,19 +355,22 @@ div .flex2 .rast {
     /*border: 1px solid darkblue;*/
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
  }
-  .flex7 {
+ .flex7 {
     display: flex;
     justify-content: space-between;
     width: 90%;
     margin: 0 auto;
-  }
+    height: 37px;
+    align-items: center;
+}
   .flex7 p {
     font-size: 11px;
     color: #b2b2b2;
   }
   .img{
-   margin: 0 auto;
-  }
+    position: relative;
+    top: 9px;
+}
   .img img {
     width: 100%;
     margin: 0 auto;
@@ -502,6 +506,7 @@ div .flex2 .rast {
     width:100%;
     height: 140px;   
 }
+
 .item1{
     width: 100%;;
     /*border: 1px solid red;*/
@@ -510,17 +515,16 @@ div .flex2 .rast {
     height: 110px;
 
 }
-.item1:hover>.overlay1{
+.item1:hover>.overlay2{
     opacity: 0.5;
     background-color: rgba(89, 163, 206, 0.8);
 }
-
 .item1>img{
     transition: transform 0.5s;
 }
 .overlay1 {
     width: 100%;
-    height: 100%;
+    height: 101%;
     background-color: rgba(0,0,0,0.8);
     position: absolute;
     top: 0;
@@ -530,9 +534,8 @@ div .flex2 .rast {
     transition: opacity 1.0s;
 }
 .overlay1 div {
-    width: 95%;
-    margin: 0 auto;
-    margin-top: 65px;
+    width: 100%;
+
 }
 .wrapper1 {
     position: relative;
@@ -542,22 +545,92 @@ div .flex2 .rast {
 .wrapper1 p {
     position: absolute;
     bottom: 32px;
-    right: 25px;
+    right: 35px;
     z-index: 2;
-    font-size: 14px;
+    font-size: 18px;
 }
 .wrapper1 h5 {
     position: absolute;
     bottom: 79px;
-    right: 15px;
+    right: 20px;
     z-index: 2;
     font-size: 10px;
 }
 .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
 }
+.box1 {
+    height: 200px;
+}
+.box2 {
+    height: 180px;
+}
+.h {
+    top: 46px;
+}
+.p2 {
+    top: 90px;
+}
+.img4 {
+    position: relative;
+}
+.img4 img {
+    width: 100%;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+}
+.item1 span {
+    float: left;
+    background-color: #ff0043;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 2px 1px;
+    font-size: 11px;
+    margin: 0 22px 0 8px;
+    position: absolute;
+    z-index: 5;
+    transform: rotate(7deg);
+    left: 18px;
+    top: 40px;
+    }
+    .item1 span:before {
+    background-color: #ff0043;
+    width: 50px;
+    height: 50px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 2px;
+    opacity: .5;
+    transform: rotate(15deg);
+    z-index: -1;
+    }
+    .item1 .h3 {
+    position: absolute;
+    bottom: 41px;
+    right: 9px;
+    z-index: 2;
+    font-size: 9px;
+    }
+    .item1:hover .h3 , .item1:hover span {
+        visibility: hidden;
+        display: none;
+        
+    }
+    .item1:hover .overlay3 {
+        background-color: #ff0043;
+        transition:  1.0s;
+    }
+    .overlay3 h3 {
+        position: absolute;
+        top: 38px;
+        right: 78px;
+        display: none;
+    }
+    .overlay3:hover h3 {
+        display: block;
+    }
+    
 
 /*sidbar*/
 /*media*/
