@@ -398,7 +398,6 @@ div .flex2 .rast {
     font-size: 27px;
     gap: 26px;
     color: #b2b2b2;
-    
 }
   .con3 {
     margin: 0 auto;
@@ -499,14 +498,12 @@ div .flex2 .rast {
     width:100%;
     height: 140px;   
 }
-
 .item1{
     width: 100%;;
     /*border: 1px solid red;*/
     position: relative;
     cursor: pointer;
     height: 110px;
-
 }
 .item1:hover>.overlay2{
     opacity: 0.5;
@@ -528,7 +525,6 @@ div .flex2 .rast {
 }
 .overlay1 div {
     width: 100%;
-
 }
 .wrapper1 {
     position: relative;
@@ -659,6 +655,7 @@ div .flex2 .rast {
         flex-direction: row;
         justify-content: space-between;
         border-radius: 5px;
+        margin-bottom: 60px;
     }
     .rast3 {
         width: 10%;
@@ -687,8 +684,29 @@ div .flex2 .rast {
         color: #a6a6a6;
         font-size: 14px;
     }
-
-    
+    .widget_content {
+        margin: 0 auto;
+        width: 95%;
+    }
+    .blog_list a {
+        text-decoration: none;
+        margin-top: 25px;
+    }
+    .blog_list li {
+        list-style-type: none;
+        border-bottom: 1px dashed #a7a7a7;
+    }
+    .blog_list p {
+        font-size: 12px;
+        color: #7d7d7d;
+        margin-bottom: 50px;
+    }
+    .blog_list h5 {
+       margin-top: 30px;
+    }
+    #border1 {
+        border: 0;
+    }
 
 /*sidbar*/
 /*media*/
@@ -839,7 +857,11 @@ div .flex2 .rast {
         margin-right: 0;
         margin-top: -13px;
     }
-    } 
+    .flex-ul {
+        gap: 20px;
+        font-size: 8px;
+    }
+    
 @media only screen and (max-width:665px) {
     div .flex2 .left .border p {
         font-size: 9px;
