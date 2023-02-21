@@ -218,9 +218,6 @@ div .flex2 .left .pc .rast2 .flex3 .col3 {
 div .flex2 .left .pc .left2 {
     width: 30%;
 }
-div .ul-btn{
-    direction: rtl;
-}
 div .ul-btn ul{
     gap: 15px;
     display: flex;
@@ -254,7 +251,6 @@ div .ul-btn  button{
     position: relative;
     z-index: 2;
     text-align: center;
-    bottom: 70px;
     
  }
  div .btn-p a button {
@@ -703,18 +699,19 @@ div .flex2 .rast {
     }
     .blog_list h5 {
        margin-top: 30px;
+       color: #1e66d4;
     }
     #border1 {
         border: 0;
     }
+    .img3{
+        position: relative;
+        top: 10px;
+     }
 
 /*sidbar*/
 /*media*/
 @media only screen and (max-width:1260px) {
-    .img3{
-       position: relative;
-       top: 10px;
-    }
     .flex12 {
         gap: 7px;
     }
