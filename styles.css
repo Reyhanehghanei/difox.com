@@ -19,15 +19,216 @@
 }
 body{
     direction: rtl;
-    font-family: 'iranyekan_numbers','iranyekan';
-    
+    font-family: 'iranyekan_numbers','iranyekan'; 
 }
+a {
+    font-family: 'iranyekan_numbers','iranyekan'; 
+}
+button {
+   font-family: 'iranyekan_numbers','iranyekan';
+}
+/*header*/
+.header1{
+    width: 95%;
+    margin: auto;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.text {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 5%;
+}
+.icons {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+.icons ul li {
+    float: right;
+}
+.icons ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style:none;
+    list-style-image:url(list-item-ul.png);
+}
+.icons ul li a:link,.icons ul li a:visited {
+    font-size: 20px;
+    color: black;
+    display: block;
+    margin-left: 15px;
+    text-decoration: none;
+}
+.icons ul::after {
+    display: block;
+    content: "";
+    clear: both;   
+}
+.icons ul li a i {
+    text-align: left;
+}
+.text ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.text ul::after {
+    display: block;
+    content: "";
+    clear: both;   
+}
+.text ul li {
+    float: right;
+}
+.text ul li a:link,.text ul li a:visited {
+    font-size: 12px;
+    color: black;
+    display: block;
+    margin-right: 15px;
+    text-decoration: none;
+}
+#top-nav{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 15px;
+    /*overflow: hidden;*/
+}
+ul#main-menu{
+    /*border: 1px solid orange;*/
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+ul#main-menu::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+ul#main-menu>li{
+    float: right;
+}
+ul#main-menu>li>a:link,ul#main-menu>li>a:visited{
+    display: block;
+    width: 101px;
+    height: 60px;
+    text-align: center;
+    padding-top: 17px;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+ul#main-menu>li:first-child>a{
+    border-radius: 0 5px 5px 0 ;
+}
+ul#main-menu>li>a>i{
+    font-size: 18px;
+}
+#toggle_btn{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+div.line{
+    height: 2px;
+    background-color: b;
+    margin: 6px 0 ;
+}
+main#content{
+    /*border: 1px solid green;*/
+    min-height: 400px;
+    /*width: 690px;*/
+    width: 69%;
+    float: left;
+}
+.top-nav::before{
+    content: " ";
+    width: calc(100% - 40px);
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    height: 60px;
+    border-radius: 100%;
+    z-index: 0;
+    box-shadow: 0 0 40px #c5c5c5;
+}
+
+/*heder*/
+
+/*slaider*/
+ .panel_search{
+    text-align: center;
+    margin-top: 15px;
+    color: #c2c2c2;
+    font-size: 14px;
+ }
+ .panel_search a {
+    color: #e13b5f;
+    text-decoration: none;
+ }
+ .hr3 {
+    border-style: dashed;
+    border-width: 1px;
+    color: #cecece;
+    margin-top: 15px;
+ }
+ .box-link {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+    color: #9d9d9d;;
+ }
+ 
+ .box-link a:link,.box-link>a:visited{
+    margin: 0 8px 0 0;
+    padding: 1px 3px;
+    font-size:14px;
+    color: #9d9d9d;
+    border-radius: 6px;
+    box-shadow: 0px 1px 1px 0.8px #cbcbcb;
+    text-decoration: none;
+}
+.box-link a:hover {
+    color: #fff;
+    box-shadow: 0px 1px 1px 0.8px #31c9cf;
+    background-color: #31c9cf;
+}
+.box-link p {
+    margin-top: 5px;
+}
+.flex15 {
+    display: flex;
+}
+
+.border4 {
+    width: 92%;
+    border: 1px solid #e6e6e6;
+    min-height: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-bottom: 60px;
+}
+/*slaider*/
 .container{
-    /*border: 1px solid red;*/
     width: 90%;
-    min-height: 300px;
     margin: 0 auto;   
 }
+
 .bxslider{
     width: 80%;
 }
@@ -107,24 +308,25 @@ div .flex2 {
     color: #565656;
  }
  div .flex2 .left .border span {
-   font-weight: 400;
-   font-size: .88em;
-   margin: auto 8px;
-   padding: 0 5px;
-   border-radius: 28px;
-   background-color: #fff5a7;
-   color: #887f37;
-   display: inline;
-   cursor: pointer;
+    font-weight: 400;
+    font-size: 10px;
+    margin: auto 6px;
+    padding: 0 9px;
+    border-radius: 28px;
+    background-color: #fff5a7;
+    color: #887f37;
+    display: inline;
+    cursor: pointer;
+    font-family: 'iranyekan_numbers','iranyekan'; 
 }
 div .flex2 .left .border  a {
       text-decoration: none;
 }
 div .flex2 .left .border .top2 {
     position: absolute;
-    left: 0;
-    top: 0;    
-    color:#ff0043;
+    left: 15px;
+    top: 11px;
+    color: #ff0043;
 }
 div .flex2 .left .border .top2 span {
     margin: 5;
@@ -133,6 +335,7 @@ div .flex2 .left .border .top2 span {
     font-weight: bolder;
     font-size: 18px;
     color:#ff0043;
+    margin-left: 0;
 }
 div .flex2 .left .pc {
     width:100%;
@@ -149,21 +352,21 @@ div .flex2 .left .pc {
     margin: 10px auto 20px;
     line-height: 27px;
     text-align: justify;
-    font-weight: 500;
+    font-weight: bold;
     text-align: right;
     padding: 5px;
     margin: 5px;
-    font-size: 15px;
+    font-size: 12px;
 }
 div .flex2 .left .pc .rast2 {
     width: 70%;
     margin-top: 40px;
 }
 div .flex2 .left .pc .rast2 h4 {
-    text-align: center;
+    font-size: 18px;
 }
 div .flex2 .left .pc .rast2 span{
-background-color: #ff0043;
+    background-color: #ff0043;
     color: #fff;
     padding: 2px 6px;
     font-size: .75em;
@@ -174,7 +377,6 @@ background-color: #ff0043;
 div .flex2 .left .pc .rast2 a {
     text-decoration:none;
     color: black;
-    margin-right: 10px;
 }
 div .flex2 .left .pc .rast2 .flex3 {
     display: flex;
@@ -223,6 +425,10 @@ div .ul-btn ul{
     display: flex;
     padding: 10px;
 }
+.left2 img {
+    height: 263px;
+    margin-top: 40px;
+}
 div .ul-btn a {
     text-decoration: none;
     color: #829061;
@@ -231,11 +437,11 @@ div .ul-btn li {
     list-style-type: none;
 }
 div .ul-btn  button{
-    padding: 10px;
+    padding: 5px;
     border: 0;
     background-color: #f5ffdc;
     cursor: pointer;
-    border-radius: 5px;
+    
 }
 .con2 .img3{
     margin: 0 auto;
@@ -358,7 +564,7 @@ div .flex2 .rast {
     align-items: center;
 }
   .flex7 p {
-    font-size: 11px;
+    font-size: 10px;
     color: #b2b2b2;
   }
   .img img {
@@ -381,8 +587,8 @@ div .flex2 .rast {
     gap: 15px;
   }
   .flex9 i {
-    margin-top: 13px;
-    margin-right: 8px;
+    margin-top: 9px;
+    margin-right: 11px;
   }
   .flex9 p {
     margin-top: 6px;
@@ -392,7 +598,7 @@ div .flex2 .rast {
     display: flex;
     margin: 0 auto;
     font-size: 27px;
-    gap: 26px;
+    gap: 14px;
     color: #b2b2b2;
 }
   .con3 {
@@ -518,6 +724,7 @@ div .flex2 .rast {
     text-align: center;
     opacity: 1;
     transition: opacity 1.0s;
+    overflow-x: hidden;
 }
 .overlay1 div {
     width: 100%;
@@ -642,28 +849,15 @@ div .flex2 .rast {
     .flex-ul li .color-li {
         color: #236fef;
     }
-    .border {
-        width: 92%;
-        border: 1px solid #e6e6e6;
-        min-height: 50px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border-radius: 5px;
-        margin-bottom: 60px;
-    }
-    .rast3 {
-        width: 10%;
+
+    .rast4 {
+        width: 20%;
     }
     .rast3 img {
-        width: 100%;
-        margin-top: 6px;
+        width: 60%;
     }
     .flex15 {
-        display: flex;
-        flex-direction: row;
-        gap: 5PX;
+        gap: 10PX;
         margin-top: 7px;
         padding-right: 15px;
     }
@@ -674,11 +868,11 @@ div .flex2 .rast {
     .flex15 h6 {
         color: #1e66d4;
     }
-    .border .left4 {
-        margin-top: 14px;
-        padding-left: 10px;
-        color: #a6a6a6;
-        font-size: 14px;
+    .border4 .left4 {
+        margin-top: 12px;
+        margin-left: 16px;
+        font-size: 13px;
+        color: #828282;
     }
     .widget_content {
         margin: 0 auto;
@@ -713,18 +907,18 @@ div .flex2 .rast {
 /*media*/
 @media only screen and (max-width:1260px) {
     .flex12 {
-        gap: 7px;
+        gap: 10px;
     }
     .flex12 a {
-        font-size: 9px;
+        font-size: 15px;
     }
     .flex9 p {
         margin-top: 8px;
         font-size: 10px;
     }
     .flex7 {
-        font-size: 10px;
-        width: 98%;
+        font-size: 17px;
+        width: 95%;
     }
     .flex10 {
         font-size: 20px;
@@ -771,17 +965,15 @@ div .flex2 .rast {
         font-size: 14px;
         gap: 6px;
     }
-    .flex7 p {
-        font-size: 7px;
-    }
-    .flex7 h6 {
-        font-size: 7px;
-    }
     .flex11 {
         font-size: 10px;
     }
     .flex7 {
+        font-size: 15px;
         width: 95%;
+    }
+    div .flex2 .rast {
+        width: 30%;
     }
 }
 @media only screen and (max-width:980px) {
@@ -810,6 +1002,15 @@ div .flex2 .rast {
         font-size: 15px;
     }
 }
+@media only screen and (max-width:900px) {
+    .flex13 .left3 {
+        font-size: 15px;
+    }
+    .flex13 .left3 li {
+        font-size: 8px;
+ 
+}
+}
 @media only screen and (max-width:855px) {
     .flex11 {
         flex-direction: column;
@@ -822,7 +1023,11 @@ div .flex2 .rast {
     .item1 span {
         left: 1px;
        }  
-}
+       .flex12 a {
+        font-size: 12px;
+       }
+      
+    }
 @media only screen and (max-width:767px) {
     #wrapper{
         flex-direction: column;
@@ -836,12 +1041,10 @@ div .flex2 .rast {
         width: 100%;
     }
     .item{
-        width:55%;
+        width:80%;
         height: auto;
     }
-    .left2 img {
-        margin-top: 65px;
-    }
+   
     div .flex2 .left .pc .rast2 .flex3  .flex4{
         flex-direction: column;
         gap: 0;
@@ -858,7 +1061,51 @@ div .flex2 .rast {
         gap: 20px;
         font-size: 8px;
     }
-    
+    ul#main-menu{
+        display: block !important;
+    }
+    ul#main-menu{
+        display: none;
+    }
+    ul#main-menu>li{
+        float: none;
+    }
+    ul#main-menu>li>a:link,ul#main-menu>li>a:visited{
+        width: auto;
+    }
+    #toggle_btn{
+        display: inline-block;
+    }
+    #main-footer>.container{
+        flex-direction: column;
+    }
+    .box-link {
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width: 736px) {
+    .icons ul li a:link,.icons ul li a:visited {
+    font-size: 18px;
+    }
+    .text ul li a:link,.text ul li a:visited {
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 688px) {
+    .icons ul li a:link,.icons ul li a:visited {
+        font-size: 16px;
+    }    
+    .text ul li a:link,.text ul li a:visited {
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:700px) {
+    .flex12 a {
+        font-size: 10px;
+    }
+}
+
 @media only screen and (max-width:665px) {
     div .flex2 .left .border p {
         font-size: 9px;
@@ -945,6 +1192,57 @@ div .flex2 .rast {
         width: 100%;
         text-align: center;
    }
+}
+@media screen and (max-width: 641px) {
+    .icons ul li a:link,.icons ul li a:visited {
+        font-size: 14px;
+    }    
+    .text ul li a:link,.text ul li a:visited {
+        font-size: 9px;
+    }
+}
+@media screen and (max-width: 593px) {
+    .icons ul li a:link,.icons ul li a:visited {
+        font-size: 12px;
+    }    
+    .text ul li a:link,.text ul li a:visited {
+        font-size: 7px;
+    }
+}
+@media screen and (max-width: 497px) {
+    .icons ul li a:link,.icons ul li a:visited {
+        margin-left: 13px;
+    }    
+    .text ul li a:link,.text ul li a:visited {
+        margin-right: 13px;
+    }
+}
+@media screen and (max-width: 476px) {
+    .icons ul li a:link,.icons ul li a:visited {
+        margin-left: 11px;
+    }    
+    .text ul li a:link,.text ul li a:visited {
+        margin-right: 11px;
+    }
+}
+@media screen and (max-width: 455px) {
+    .container {
+        width: 97%;
+    }
+    .icons ul li a:link,.icons ul li a:visited {
+        margin-left: 10px;
+    }    
+    .text ul li a:link,.text ul li a:visited {
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 435px) {
+    .text {
+        width: 32%;
+    }
+    .icons {
+        width: 32%;
+    }
 }
 @media only screen and (max-width:400px) {    
     .flex2 {
