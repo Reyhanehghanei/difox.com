@@ -27,7 +27,9 @@ a {
 button {
    font-family: 'iranyekan_numbers','iranyekan';
 }
-
+.color2 {
+    background-color: #f9f9f9;
+}
 /*header*/
 .header1{
     width: 95%;
@@ -347,7 +349,8 @@ div .flex2 .left .pc {
 }
 .con2{
     background-color: white;
-    border-radius: 10px 0px;
+    border-radius: 10px 10px 0 0px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .con2 p{
     margin: 10px auto 20px;
@@ -377,7 +380,7 @@ div .flex2 .left .pc .rast2 span{
 }
 div .flex2 .left .pc .rast2 a {
     text-decoration:none;
-    color: black;
+    color: #8e8989;;
 }
 div .flex2 .left .pc .rast2 .flex3 {
     display: flex;
@@ -422,9 +425,8 @@ div .flex2 .left .pc .left2 {
     width: 30%;
 }
 div .ul-btn ul{
-    gap: 15px;
-    display: flex;
     padding: 10px;
+    direction: ltr;
 }
 .left2 img {
     height: 263px;
@@ -440,9 +442,8 @@ div .ul-btn li {
 div .ul-btn  button{
     padding: 5px;
     border: 0;
-    background-color: #f5ffdc;
-    cursor: pointer;
-    
+    background-color: white;
+    cursor: pointer;   
 }
 .con2 .img3{
     margin: 0 auto;
@@ -1056,6 +1057,7 @@ div .flex2 .rast {
     div .flex2 .left .pc .rast2 a {
         font-size: 12px;
         margin-right: 0;
+       
     }
     div .flex2 .left .pc .rast2 .flex3 .flex4 .bold {
         margin-right: 0;
