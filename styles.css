@@ -27,7 +27,6 @@ a {
 button {
    font-family: 'iranyekan_numbers','iranyekan';
 }
-
 /*header*/
 .header1{
     width: 95%;
@@ -554,7 +553,7 @@ font-size: 11px;
 div .flex2 .rast {
     width: 25%;
     /*border: 1px solid darkblue;*/
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
  }
  .flex7 {
     display: flex;
@@ -881,11 +880,11 @@ div .flex2 .rast {
     }
     .blog_list a {
         text-decoration: none;
-        margin-top: 25px;
     }
     .blog_list li {
         list-style-type: none;
         border-bottom: 1px dashed #a7a7a7;
+        height: 65px;
     }
     .blog_list p {
         font-size: 12px;

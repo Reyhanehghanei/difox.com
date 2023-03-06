@@ -27,9 +27,7 @@ a {
 button {
    font-family: 'iranyekan_numbers','iranyekan';
 }
-.color2 {
-    background-color: #f9f9f9;
-}
+
 /*header*/
 .header1{
     width: 95%;
@@ -349,8 +347,8 @@ div .flex2 .left .pc {
 }
 .con2{
     background-color: white;
-    border-radius: 10px 10px 0 0px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .con2 p{
     margin: 10px auto 20px;
@@ -380,7 +378,7 @@ div .flex2 .left .pc .rast2 span{
 }
 div .flex2 .left .pc .rast2 a {
     text-decoration:none;
-    color: #8e8989;;
+    color: black;
 }
 div .flex2 .left .pc .rast2 .flex3 {
     display: flex;
@@ -425,6 +423,8 @@ div .flex2 .left .pc .left2 {
     width: 30%;
 }
 div .ul-btn ul{
+    gap: 15px;
+    display: flex;
     padding: 10px;
     direction: ltr;
 }
@@ -443,7 +443,8 @@ div .ul-btn  button{
     padding: 5px;
     border: 0;
     background-color: white;
-    cursor: pointer;   
+    cursor: pointer;
+    
 }
 .con2 .img3{
     margin: 0 auto;
@@ -453,7 +454,9 @@ div .ul-btn  button{
     width: 100%;
     margin-top: 25px;
 }
-
+.color2 {
+    background-color: #f9f9f9;
+}
 /*btn-p*/
  div .btn-p {
     position: relative;
@@ -470,6 +473,121 @@ div .ul-btn  button{
     border: 0;
     outline: 0;
  }
+ .flex-star {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    gap: 15px;  
+ }
+ .stare {
+    color: rgb(241 195 57 / 98%); 
+ }
+ .stare-1{
+    color: gray;
+ }
+ .stare-1 {
+    color: #918b8b;
+}
+.stare:hover {
+    color: rgb(234, 87, 2);
+}
+.stare-1:hover {
+    color: rgb(234, 87, 2);
+}
+.matn-3 p {
+    text-align: center;
+}
+.color-gr {
+    color: #ff0000;
+}
+.color-r {
+    color: #008080;
+}
+.color-b {
+    color: #0000ff;
+}
+.mony {
+    margin-top: 90px;
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+}
+.mony img {
+    height: 32px;
+    margin-top: 7px;
+}
+.box-img{
+    margin-top: 45px;
+    margin-right: 100px;
+}
+.box-flex3 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 70px;
+}
+.icon {
+    border-left: 1px solid #e8e5e5bf;
+    width: 20%;
+    position: relative;
+    height: 125px;
+}
+.icon i {
+    position: absolute;
+    right: 60px;
+    top: 28px;
+    font-size: 33px;
+    color: #2375ef; 
+}
+.icon p {
+    position: absolute;
+    top: 62px;
+    right: 29px;
+    color: #2375ef;
+}
+.flex-ule {
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
+    font-size: 12px;
+}
+.flex-ule ul {
+    list-style-type: none;
+}
+.flex-ule ul li {
+    margin-bottom: 10px;
+}
+.bold1 {
+    font-weight: bold;
+}
+.flex-tm {
+    display: flex;
+    gap: 185px;
+}
+.box-felx2 {
+    margin-top: 15px;
+    display: flex
+}
+.box-felx2 i {
+    color: #000;
+}
+.box-felx2 p {
+    color: #000;
+}
+.ul-box-1 {
+    direction: ltr;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 13px;
+    margin-right: 14px;
+}
+.ul-box-1 ul {
+    list-style-type: none;
+}
+.color-icon i {
+    color: #1dc13c;;
+}
 /*btn-p*/
 /*foter*/
 footer{
@@ -1057,7 +1175,6 @@ div .flex2 .rast {
     div .flex2 .left .pc .rast2 a {
         font-size: 12px;
         margin-right: 0;
-       
     }
     div .flex2 .left .pc .rast2 .flex3 .flex4 .bold {
         margin-right: 0;
