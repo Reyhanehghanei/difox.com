@@ -165,7 +165,17 @@ main#content{
 }
 
 /*heder*/
-
+/*sider-aks*/
+.grid-e {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0 , 1fr));
+    margin-top: 80px;
+}
+.grid-e img {
+    width: 85%;
+    height: 80%;
+}
+/*sider-aks*/
 /*slaider*/
  .panel_search{
     text-align: center;
@@ -234,13 +244,15 @@ main#content{
     width: 80%;
 }
 div.aks{
-    margin-top: 15px;
+    width: 90%;
+    margin: 0 auto;
 }
 #wrapper{
     /*border: 1px solid green;*/
     margin: 0 auto;
     display: flex;
     flex-direction: row;
+    width: 92%;
 }
 .item{
     width: 40%;
@@ -479,6 +491,7 @@ div .ul-btn  button{
     margin-top: 15px;
     margin-bottom: 15px;
     gap: 15px;  
+    margin-right: 25px;
  }
  .stare {
     color: rgb(241 195 57 / 98%); 
@@ -580,13 +593,38 @@ div .ul-btn  button{
     font-size: 12px;
     font-weight: bold;
     margin-top: 13px;
-    margin-right: 14px;
+    margin-right: 75px;
 }
 .ul-box-1 ul {
     list-style-type: none;
 }
 .color-icon i {
     color: #1dc13c;;
+}
+.color-icon2 i {
+    color: #d29623;
+}
+.color-icon2 p {
+    color: #d29623;
+}
+.ul-matn2{
+    margin-top: 60px;
+    margin-right: 22px;
+    font-size: 12px;
+}
+.ul-matn2 ul {
+    list-style-type: none;
+    line-height: 25px;
+}
+.ul-top{
+    margin-top: -40px;
+    color: #339966;   
+}
+.icon-color p {
+    color: #ff0043;
+}
+.icon-color i {
+    color: #ff0043;
 }
 /*btn-p*/
 /*foter*/
