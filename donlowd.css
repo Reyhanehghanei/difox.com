@@ -626,6 +626,81 @@ div .ul-btn  button{
 .icon-color i {
     color: #ff0043;
 }
+.slidsoww{
+    width: 50%;
+    /*border: 1px solid darkblue;*/
+    height: 40%;
+}
+.ul-matn5 {
+    width: 90%;
+}
+.slidsoww {
+    margin: 0 auto;
+    width: 75%;
+    height: 87%;
+}
+.slidsoww img {
+    width: 100%;
+    height: 100%;
+}
+.box-don {
+    width:100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    margin: 0 auto;
+}
+ .color-gre {
+    color: #20a43c;
+    font-size: 12px;
+    margin-top: 10px
+}
+.mr-ragh {
+    margin-right: 12px;
+    color: #8f8f8f;
+    font-size: 12px;
+}
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.p-box {
+    font-size: 10px;
+    margin-left: 30px;
+    color: #c3c3c3;
+    margin-top: 9px;
+}
+.p-box2 {
+    color: #8f8f8f;
+    font-size: 11px;
+    margin-right: -21px;
+}
+.svg-s {
+    position: absolute;
+    left: 112px;
+    top: 3px;
+}
+.svg-s a {
+    text-decoration: none;
+    color:#c3c3c3;
+}
+.position-s {
+    position: relative;
+    bottom: 10px;
+}
+.bottom {
+    background-color: white;
+}
+.bottom a {
+    color: #5a5a5a;
+    text-decoration: none;
+    font-size: 10px;
+    margin-right: 19px;
+    font-weight: 600;
+}
+.border-raght {
+    border-right: 1px solid gray;
+    margin-right: 70px;
+}
 /*btn-p*/
 /*foter*/
 footer{

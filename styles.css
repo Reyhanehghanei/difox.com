@@ -164,7 +164,17 @@ main#content{
 }
 
 /*heder*/
-
+/*sider-aks*/
+.grid-e {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0 , 1fr));
+    margin-top: 80px;
+}
+.grid-e img {
+    width: 85%;
+    height: 80%;
+}
+/*sider-aks*/
 /*slaider*/
  .panel_search{
     text-align: center;
@@ -233,13 +243,15 @@ main#content{
     width: 80%;
 }
 div.aks{
-    margin-top: 15px;
+    width: 90%;
+    margin: 0 auto;
 }
 #wrapper{
     /*border: 1px solid green;*/
     margin: 0 auto;
     display: flex;
     flex-direction: row;
+    width: 92%;
 }
 .item{
     width: 40%;
