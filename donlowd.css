@@ -786,7 +786,10 @@ div .ul-btn  button{
     width: 100%; position: relative;
     transition-duration: 0s; transform: translate3d(-618.75px, 0px, 0px);
 }
+.img-gif {
 
+}
+/*minmano*/
 /*foter*/
 footer{
     background-image: url(footer_bg.png);
@@ -1377,12 +1380,16 @@ div .flex2 .rast {
             font-size: 10px;
         }
     }
-    @media only screen and (max-width:820px) {
+    @media only screen and (max-width:895px) {
         .ul-box-1 {
             margin-right: 86px;
         }
+        .flex-ule {
+            font-size: 10px;
+        }
         .flex-tm {
-            gap: 100px;
+            gap: 85px;
+            font-size: 10px;
         }
         .icon {
             width: 24%;
@@ -1395,10 +1402,15 @@ div .flex2 .rast {
         }
         .icon i  {
             margin-right: -14px;
+            font-size: 25px;
+        }
+        .icon p {
+            font-size: 11px;
+            right: 15px;
         }
     }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:768px) {
     #wrapper{
         flex-direction: column;
         align-items: center;
@@ -1455,7 +1467,21 @@ div .flex2 .rast {
     .flex15 {
         justify-content: center;
     }
-
+    .ul-box-1 {
+        margin-right: 55px;
+    }
+    .icon p {
+        font-size: 10px;
+    }
+    .flex-tm {
+        gap: 70px;
+    }
+    .ul-matn2 ul {
+        font-size: 7px;
+    }
+    .ul-matn5 {
+        width: 75%;
+    }
 }
 @media screen and (max-width: 736px) {
     .icons ul li a:link,.icons ul li a:visited {
@@ -1473,6 +1499,15 @@ div .flex2 .rast {
         font-size: 10px;
     }
 }
+@media only screen and (max-width:710px) {
+    .ul-box-1 {
+        margin-right: 25px;
+    }
+    .flex-tm {
+        gap: 55px;
+    }
+}
+
 @media only screen and (max-width:700px) {
     .flex12 a {
         font-size: 10px;
@@ -1565,17 +1600,94 @@ div .flex2 .rast {
         width: 100%;
         text-align: center;
    }
-}
-@media screen and (max-width: 720px) {
-    .box-flex3 {
-        flex-direction: column;
-        align-items: center;
-    }
-    .icon {
+   .box-flex3 {
+    flex-direction: column;
+    align-items: center;
+   }
+   .icon {
+    border: 0;
+    width: 35%;
+   }
+   .box-felx2 {
+    flex-direction: column;
+    align-items: center;
+   }
+   .container {
+    width: 100%;
+   }
+   .con2 {
+    width: 111%;
+    margin-right: -5%;
+   }
+   .ul-box-1 {
+    margin-right: 135px;
+   }
+   .ul-matn2 ul {
+    font-size: 11px;
+    margin-left: 145px;
+   }
+   .ul-matn5 {
+    width: 100%;
+   }
+   .icon p {
+    font-size: 10px;
+    margin-top: -10px;
+    margin-right: 10px;
+   }
+   .flex-ule{
+    flex-direction: column;
+    gap: 0;
+    font-size: 8px;
+   }
+   .ul-matn {
+    margin-left: 65%;
+   }
+   .flex-tm {
+    gap: 25px;
+   }
+   .matn-3 p {
+    font-size: 8px;
+   }
+   div .flex2 .left .pc .rast2 .flex3 .col-1 {
         border: 0;
-        width: 30%;
-    }
-    
+   }
+   div .flex2 .left .pc .rast2 .flex3 .col-2 {
+    width: 23%;
+   }
+   div .flex2 .left .pc .rast2 .flex3 .flex4 ul {
+    font-size: 10px;
+   }
+   div .flex2 .left .pc .rast2 .flex3 .col3 i {
+    margin-top: 30px;
+   }
+   div .flex2 .left .pc .rast2 h4 {
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 24px;
+   }
+   .con2 p {
+    font-size: 10px;
+   }
+   .flex-star {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 10px;
+   }
+   .img-gif {
+    width: 111%;
+    margin-right: -25px;
+   }
+   .box-don {
+    width: 110%;
+    margin-right: -24px;
+}
+.flex-img {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 3px;
+}
+
 }
 
 @media screen and (max-width: 641px) {
@@ -1594,6 +1706,23 @@ div .flex2 .rast {
         font-size: 7px;
     }
 }
+@media screen and (max-width: 537px) {
+    .ul-box-1 {
+        margin-right: 70px;
+    }
+    .ul-box-1 {
+        margin-right: 75px;
+    }
+}
+}
+
+@media screen and (max-width: 508px) {
+    .img-gif {
+        width: 111%;
+        margin-right: -18px;
+    }
+}
+
 @media screen and (max-width: 497px) {
     .icons ul li a:link,.icons ul li a:visited {
         margin-left: 13px;
@@ -1610,6 +1739,18 @@ div .flex2 .rast {
         margin-right: 11px;
     }
 }
+@media screen and (max-width: 467px) {
+    .ul-box-1 {
+        margin-right: 30px;
+    }
+    .ul-matn2 ul {
+        font-size: 9px;
+    }
+    .box-img img {
+        width: 85%;
+    }
+}
+
 @media screen and (max-width: 455px) {
     .container {
         width: 97%;
@@ -1619,6 +1760,13 @@ div .flex2 .rast {
     }    
     .text ul li a:link,.text ul li a:visited {
         margin-right: 10px;
+    }
+    .img-gif {
+        width: 111%;
+        margin-right: -16px;
+    }
+    .box-don {
+        margin-right: -14px;
     }
 }
 @media screen and (max-width: 435px) {
