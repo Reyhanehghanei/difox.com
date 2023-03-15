@@ -875,7 +875,7 @@ div .ul-btn  button{
     width: 90%;
     background-color: #f9f9f9;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    height: 450px;
+    min-height: 450px;
 }
 .flex-comentt {
     display: flex;
@@ -909,11 +909,11 @@ div .ul-btn  button{
     list-style-type: none;
 }
 .form-coment textarea {
-    width: 100%;
+    outline: 0;
     min-height: 197px;
     font-size: 14px;
     font-weight: 700;
-    border: none;
+    border: 0;
     border-radius: 5px;
     box-shadow: 1px 1px 3px #dcd8d8;
     margin-right: 80px;
@@ -1406,6 +1406,7 @@ div .flex2 .rast {
     .blog_list li {
         list-style-type: none;
         border-bottom: 1px dashed #a7a7a7;
+        height: 65px;
     }
     .blog_list p {
         font-size: 12px;
@@ -1482,10 +1483,25 @@ div .flex2 .rast {
         width: 75%;
     }
     .ul-box-1{
+
         margin-right: 145px;
     }
     .icon {
         width: 23%;
+    }
+    .bottom-box {
+        width: 100%;
+    }
+    .top-box {
+        width: 100%;
+       }
+    .form-coment textarea {
+       margin-right: 35px;
+       padding: 14px;
+    
+      }
+    .form-coment input {
+        width: 80%;
     }
 }
 
@@ -1551,8 +1567,10 @@ div .flex2 .rast {
     }
     .flex13 .left3 li {
         font-size: 8px;
- 
-}
+   }
+   .form-coment textarea {
+    margin-right: -6px;
+   }
 }
 @media only screen and (max-width:855px) {
     .flex11 {
@@ -1569,8 +1587,20 @@ div .flex2 .rast {
        .flex12 a {
         font-size: 12px;
        }
-      
-    }
+      .form-coment textarea {
+        padding: 13px;
+        margin-right: -35px;
+      }
+      .form-coment input {
+        width: 70%;
+      }
+      .comment_note {
+        font-size: 9px;
+      }
+      .flex-button {
+        gap: 55px;
+      }
+}
     @media only screen and (max-width:830px) {
         .ul-box-1 {
         margin-right: 90px;
@@ -1682,6 +1712,12 @@ div .flex2 .rast {
     .ul-matn5 {
         width: 75%;
     }
+    .form-coment input {
+        width: 60%;
+    }
+   .form-coment textarea {
+    margin-right: -59px;
+   }
 }
 @media screen and (max-width: 736px) {
     .icons ul li a:link,.icons ul li a:visited {
@@ -1690,6 +1726,11 @@ div .flex2 .rast {
     .text ul li a:link,.text ul li a:visited {
         font-size: 11px;
     }
+    .form-coment textarea {
+        margin-right: -66px;
+        padding: 9px;
+    }
+    
 }
 @media screen and (max-width: 688px) {
     .icons ul li a:link,.icons ul li a:visited {
@@ -1887,6 +1928,31 @@ div .flex2 .rast {
     align-items:center;
     gap: 3px;
 }
+.top-box {
+    width: 110%;
+    margin-right: -33px;
+}
+.bottom-box {
+    width: 110%;
+    margin-right: -33px;
+}
+.rast3 img {
+    width: 50%;
+    margin-right: 80px;
+}
+.flex13 .left3 li {
+    font-size: 20px;
+   }
+   .flex13 a h6{
+    font-size: 18px;
+   }
+   .flex12 a {
+    font-size: 19px;
+}
+.flex-ul {
+    gap: 20px;
+    font-size: 15px;
+}
 
 }
 
@@ -1898,6 +1964,16 @@ div .flex2 .rast {
         font-size: 9px;
     }
 }
+@media screen and (max-width: 610px) {
+    div .flex2 .left .border .top2 {
+        left: 193px;
+        top: -11px;
+    }
+    div .flex2 .left .border {
+        width: 106%;
+        margin-right: -12px;
+    }
+}
 @media screen and (max-width: 593px) {
     .icons ul li a:link,.icons ul li a:visited {
         font-size: 12px;
@@ -1906,6 +1982,31 @@ div .flex2 .rast {
         font-size: 7px;
     }
 }
+
+@media screen and (max-width: 575px) {
+    .flex-form {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .form-coment textarea {
+        margin-right: 84px;
+        padding: 21px;   
+    }
+    .form-coment input {
+        margin-right: 90px;
+    }
+    .flex-button {
+        flex-direction: column;
+        gap: 0;
+    }
+    .comment_note {
+        margin-right: 25px;
+        width: 70%;
+     }
+    
+
+}
+
 @media screen and (max-width: 537px) {
     .ul-box-1 {
         margin-right: 70px;
@@ -1913,6 +2014,7 @@ div .flex2 .rast {
     .ul-box-1 {
         margin-right: 75px;
     }
+  
 }
 
 
@@ -1938,6 +2040,12 @@ div .flex2 .rast {
     .text ul li a:link,.text ul li a:visited {
         margin-right: 11px;
     }
+
+}
+@media screen and (max-width: 475px) {
+    .form-coment textarea {
+        margin-right: 40px;
+    }
 }
 @media screen and (max-width: 467px) {
     .ul-box-1 {
@@ -1949,6 +2057,7 @@ div .flex2 .rast {
     .box-img img {
         width: 85%;
     }
+   
 }
 
 @media screen and (max-width: 455px) {

@@ -1210,6 +1210,26 @@ div .flex2 .rast {
         width: 100%;
         text-align: center;
    }
+   .rast3 img {
+    width: 50%;
+    margin-right: 80px;
+  }
+  div .flex2 .left .border {
+    width: 100%;
+   }
+   .flex13 .left3 li {
+    font-size: 20px;
+   }
+   .flex13 a h6{
+    font-size: 18px;
+   }
+   .flex12 a {
+    font-size: 19px;
+}
+.flex-ul {
+    gap: 20px;
+    font-size: 15px;
+}
 }
 @media screen and (max-width: 641px) {
     .icons ul li a:link,.icons ul li a:visited {
@@ -1218,6 +1238,12 @@ div .flex2 .rast {
     .text ul li a:link,.text ul li a:visited {
         font-size: 9px;
     }
+}
+@media screen and (max-width: 610px){
+div .flex2 .left .border .top2 {
+    left: 193px;
+    top: -11px;
+}
 }
 @media screen and (max-width: 593px) {
     .icons ul li a:link,.icons ul li a:visited {
