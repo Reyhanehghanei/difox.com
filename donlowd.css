@@ -104,8 +104,9 @@ button {
 ul#main-menu{
     /*border: 1px solid orange;*/
     margin: 0;
-    padding: 0;
+    padding: 8px;
     list-style-type: none;
+    position: relative;
 }
 ul#main-menu::after{
     display: block;
@@ -114,6 +115,7 @@ ul#main-menu::after{
 }
 ul#main-menu>li{
     float: right;
+    margin-right: 15px;
 }
 ul#main-menu>li>a:link,ul#main-menu>li>a:visited{
     display: block;
@@ -124,12 +126,39 @@ ul#main-menu>li>a:link,ul#main-menu>li>a:visited{
     text-decoration: none;
     color: black;
     font-size: 12px;
+    opacity: 0;
+    position: relative;
+    right: -31px;
+    bottom: 25px;
+    transition:translateY 1s;
+}
+ul#main-menu>li:hover a {
+    fill: #2fc4d2;
+    transform: translateY(18px);
+    opacity: 1;
+}
+ul#main-menu>li:hover svg {
+    fill: #2fc4d2;
+    transform: translateY(18px);
 }
 ul#main-menu>li:first-child>a{
     border-radius: 0 5px 5px 0 ;
 }
 ul#main-menu>li>a>i{
     font-size: 18px;
+}
+ul#main-menu svg
+{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: 19px;
+    overflow: hidden;
+    transition: transform 0.5s;
+
+}
+ul#main-menu svg:hover{
+  
 }
 #toggle_btn{
     width: 40px;
@@ -163,6 +192,7 @@ main#content{
     z-index: 0;
     box-shadow: 0 0 40px #c5c5c5;
 }
+
 
 /*heder*/
 /*sider-aks*/
